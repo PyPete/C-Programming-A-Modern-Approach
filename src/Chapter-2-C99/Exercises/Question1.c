@@ -1,11 +1,19 @@
-//Create and run Kernighan and Ritchie's famous "Hello, World!" program
-//Do you get a warning message from the compiler? If so, whats needed to make it
-//go away
+//Write a program that uses printf to display the following picture on the screen:
+         *
+        *
+       *
+  *   *
+   * *
+    *
 #include <stdio.h>
 
 int main(void)
 {
-    printf("Hello, world\n");
+    printf("       *\n");
+    printf("      *\n");
+    printf("     *\n");
+    printf("*   *\n");
+    printf(" * *\n");
+    printf("  *\n");
+    return 0;
 }
-
-//Answer: It compiled and I didnt get any warnings. Using GCC from codeblocks  
