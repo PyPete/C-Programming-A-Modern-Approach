@@ -12,7 +12,7 @@ int main(void)
     //Assign value to Fahrenheit variable
     scanf("%f", &fahrenheit);
     //Calculate celsius
-    celsius = (fahrenheight - FREEZING_PT) * SCALE_FACTOR;
+    celsius = (fahrenheit - FREEZING_PT) * SCALE_FACTOR;
     //Print answer to screen
     printf("Celsius equivalent: %.1f\n", celsius);
     return 0;
