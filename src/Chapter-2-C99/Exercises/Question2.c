@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 //Declare constant PI
-#define PI 3.14f
+#define PI 3.14159265359f
 
 int main(void)
 {
