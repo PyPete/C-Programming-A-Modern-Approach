@@ -8,24 +8,22 @@ fn main()
 	//Initialise variables for string
 	//If I used just one string variable for each user input
 	//it crashed. This feels like a poor solution
-	let mut heightstr = String::new();
-	let mut lengthstr = String::new();
-	let mut widthstr = String::new();
+	let mut string = String::new();
 	
 	//Get user input
 	println!("Enter height of the box: ");
-	io::stdin().read_line(&mut heightstr).ok();
-	let height = i32::from_str(heightstr.trim()).unwrap();
+	io::stdin().read_line(&mut string).ok();
+	let height = i32::from_str(string.trim()).unwrap();
+	string.clear();
 
 	println!("Enter length of box: ");
-	io::stdin().read_line(&mut lengthstr).ok();
-	let length = i32::from_str(lengthstr.trim()).unwrap();
-
-	println!("Enter width of box: ");
-	io::stdin().read_line(&mut widthstr).ok();	
-	let width = i32::from_str(widthstr.trim()).unwrap();
-	println!("{:?}", width);
+	io::stdin().read_line(&mut string).ok();
+	let length = i32::from_str(string.trim()).unwrap();
+	string.clear();
 	
+	println!("Enter width of box: ");
+	io::stdin().read_line(&mut string).ok();	
+	let width = i32::from_str(string.trim()).unwrap();
 
 	//Calculate volume
 	let volume = height * length * width;
