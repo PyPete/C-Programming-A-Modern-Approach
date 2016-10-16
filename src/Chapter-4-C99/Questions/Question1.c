@@ -7,9 +7,9 @@
 
 int main(void)
 {
-    int first, second;
+    int num;
     printf("Enter a two-digit number: ");
-    scanf("%1d%1d", &first, &second);
-    printf("The reversal is: %d%d", second, first);
+    scanf("%d", &num);
+    printf("The reversal is: %d%d", num%10, num/10);
     return 0;
 }
