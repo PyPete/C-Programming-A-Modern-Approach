@@ -3,9 +3,9 @@
 
 int main(void)
 {
-    int first, second, third;
+    int num;
     printf("Enter a three-digit number: ");
-    scanf("%1d%1d%1d", &first, &second, &third);
-    printf("The reversal is: %1d%1d%1d", third, second, first);
+    scanf("%d", &num);
+    printf("The reversal is: %1d%1d%1d", num%10, (num%10)%10, num/100);
     return 0;
 }
