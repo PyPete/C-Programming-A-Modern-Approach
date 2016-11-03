@@ -1,4 +1,5 @@
-//Calculates a broker's commission
+//Add a loop to the broker.c program so that the user can enter more than one trade and the program will
+//calculate the commission on each. The programme should terminate when the user enters 0 as the trade value
 #include <stdio.h>
 
 int main(void)
