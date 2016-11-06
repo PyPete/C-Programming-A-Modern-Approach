@@ -13,25 +13,27 @@ use std::io::{self, Write};
 fn main()
 {
 	let mut largest : f32 = 0.0;
-
+	//a neat way to do an infinite loop
 	loop 
 	{
 		print!("Enter a number (0 will exit): ");
+		//print message to screen
 		io::stdout().flush().unwrap();
 		//read in num as text first
 		let mut num = String::new();
+		//Its quite cool that you can build in error checking
 		io::stdin().read_line(&mut num)
 			.ok()
 			.expect("Something went wrong");
+		//parse the text into a float - same build in error checking
 		let num:f32 =  num.trim()
 			.parse()
 			.ok()
 			.expect("Failed to parse number");
 		
-
+		//exit loop if user enters 0.0
 		if num == 0.0
 		{
-			io::stdout().flush().unwrap();
 			break;
 		}
 		//else check if new number is larger than current largest
