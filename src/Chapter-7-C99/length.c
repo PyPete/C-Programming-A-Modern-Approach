@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    char ch
+    char ch;
     int len = 0;
 
     printf("Enter a message: ");
