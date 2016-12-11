@@ -1,0 +1,5 @@
+Which of the following are not legal C identifiers?
+a) 100_bottles -not legal, dont start with numbers
+b) _100_bottles -legal, underscore all ok
+c) one__hundred__bottles -legal
+d) bottles_by_the_hundred_ -legal
