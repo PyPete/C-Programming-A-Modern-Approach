@@ -1,0 +1,58 @@
+//Write a program that reads a message, then checks whether its a palindrome
+//Ignore all characters that aren't letters. Use integer variables to keep
+//track of positions in the array
+//Enter a message: He lived as a devil, eh?
+//Palindrome
+
+//Include libraries
+#include <stdio.h>
+#include <ctype.h>
+#include <stdbool.h>
+
+
+int main(void)
+{
+    //Declare variables
+    char ch, sentence[99], *sentence_p=sentence, *p;
+    int length=0;
+    bool palindrome=true;
+
+    //Ask user to enter a message
+    printf("Enter a message: ");
+
+    //Loop through the message
+    while((ch=getchar())!='\n')
+    {
+        //if the char is in alpha and not a space
+        if (isalpha(ch) && !isspace(ch))
+        {
+           //as to the character array
+           *sentence_p = ch;
+           //increase pointer index
+           sentence_p++;
+           length++;
+        }
+    }
+    //decrease last element by 1
+    sentence_p--;
+    //assign dummy variable to j
+    p = sentence;
+    //loop through the message again
+    for (char *p = sentence; p<sentence+length; p++, sentence_p--)
+    {
+        //if the characters from either end are not the same
+        if(tolower(*p)!=tolower(*sentence_p))
+        {
+            //break
+            palindrome = false;
+            break;
+        }
+    }
+    //report back to the user
+    if (palindrome)
+        printf("Palindrome\n");
+    else
+        printf("Not a palindrome\n");
+    return 0;
+}
+
