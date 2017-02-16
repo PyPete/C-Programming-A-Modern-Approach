@@ -1,5 +1,5 @@
-# C-Programming-A-Modern-Approach (alongside some Rust)
-Following this book and writing up code in C and Rust. Purely to learn a programming language. I really think this is a good book and have enjoy trying to find solutions in two languages. A fun way to learn
+# C-Programming-A-Modern-Approach
+Following this book and writing up code in C
 
 Chapter 2
 Variables and Assignments
