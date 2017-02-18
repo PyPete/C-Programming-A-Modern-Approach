@@ -5,9 +5,10 @@
 
 int main(void)
 {
+    //Variables - no initialisation
     int a, b, c;
     float d, e, f;
-
+    //Print these out
     printf("%d\n", a); //prints 37
     printf("%d\n", b); //prints 8
     printf("%d\n", c); //prints 45
